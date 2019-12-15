@@ -1,0 +1,6 @@
+{
+  "python.pythonPath": "C:\\Users\\ysp97\\Anaconda3\\envs\\test_2\\python.exe",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "editor.formatOnSave": true
+}
