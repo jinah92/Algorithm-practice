@@ -11,6 +11,8 @@ def solution(answers):
         '3' : 0
     }
 
+    result = []
+
     for i in range(len(answers)):
         if answer_1[i%len(answer_1)] == answers[i]:
             # correct_answers[0] = correct_answers[0] + 1
@@ -27,8 +29,11 @@ def solution(answers):
     # students.values().sort()
     # students_test = students.items()
     students_test = sorted(students.items(), key=lambda x: x[1], reverse=True)
-                    
-    return list(students_test.keys())
+                
+    for key, value in students_test.items():
+        if value !=0:
+            result.append(students_test[key])
+    return result
 
 answers = [1, 2, 3, 4, 5, 1, 2]
 
