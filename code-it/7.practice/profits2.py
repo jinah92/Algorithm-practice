@@ -9,7 +9,7 @@ def sublist_max(profits, start, end):
     left_sum = sublist_max(profits, start, mid)
     right_sum = sublist_max(profits, mid+1, end)
     mid_sum = max_crossing_site(profits, start, end)
-    
+
     return max(left_sum, right_sum, mid_sum)
 
 
@@ -17,19 +17,19 @@ def max_crossing_site(profits, start, end):
     mid = (start + end)//2
 
     left_sum = 0    # 왼쪽 누적 수익
-    left_max = profits[mid] # 왼쪽 최고 수익
+    left_max = profits[mid]  # 왼쪽 최고 수익
 
     for i in range(mid, start-1, -1):
         left_sum += profits[i]
         left_max = max(left_sum, left_max)
-    
+
     right_sum = 0   # 오른쪽 누적 수익
     right_max = profits[mid+1]  # 오른쪽 최고 수익
-    
+
     for i in range(mid+1, end+1):
         right_sum += profits[i]
         right_max = max(right_sum, right_max)
-    
+
     return left_max + right_max
 
 
