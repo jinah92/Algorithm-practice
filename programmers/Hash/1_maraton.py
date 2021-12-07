@@ -1,4 +1,6 @@
-# 내 풀이방법
+# 완주하지 못한 선수
+# 레벨 1
+# 해쉬
 
 def solution(participant, completion):
 	n = len(completion)
@@ -12,3 +14,8 @@ def solution(participant, completion):
 
 	answer = participant[-1]
 	return answer
+
+participant = ["mislav", "stanko", "mislav", "ana"]
+completion = ["stanko", "ana", "mislav"]
+
+solution(participant, completion)
