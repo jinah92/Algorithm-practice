@@ -12,9 +12,3 @@ var twoSum = function (nums, target) {
     hashMap[nums[i]] = i;
   }
 };
-
-let nums = [0, 4, 3, 0];
-let target = 0;
-
-const result = twoSum(nums, target);
-console.log(result);

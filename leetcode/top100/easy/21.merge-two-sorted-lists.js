@@ -67,9 +67,3 @@ function mackInsertNode(list) {
 
   return singleLinkedList;
 }
-
-let list1 = mackInsertNode([1, 2, 4]);
-let list2 = mackInsertNode([1, 3, 4]);
-
-const result = mergeTwoLists(list1, list2);
-console.log(result);
