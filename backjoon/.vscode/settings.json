@@ -1,8 +1,0 @@
-{
-    "python.pythonPath": "C:\\Users\\ysp97\\Anaconda3\\envs\\ml_study\\python.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "C:\\Windows\\System32\\cmd.exe",
-        "/K", 
-        "C:\\Users\\ysp97\\Anaconda3\\Scripts\\activate.bat C:\\Users\\ysp97\\Anaconda3",
-    ]
-}
