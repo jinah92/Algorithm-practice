@@ -1,3 +1,5 @@
+from typing import int
+
 def firstBadVersion(self, n: int) -> int:
     start = 1
     end = n
